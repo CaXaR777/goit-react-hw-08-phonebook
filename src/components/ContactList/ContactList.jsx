@@ -4,8 +4,8 @@ import { useDispatch } from 'react-redux';
 
 import { useSelector } from 'react-redux';
 
-import { selectIsLoading, selectVisibleContacts } from '../../redux/selectors';
-import { deleteContact } from '../../redux/operations';
+import { selectIsLoading, selectVisibleContacts } from '../../redux/contacts/selectors';
+import { deleteContact } from '../../redux/contacts/operations';
 
 
 

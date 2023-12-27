@@ -3,8 +3,8 @@ import { useDispatch, useSelector } from 'react-redux';
 
 import * as Yup from 'yup';
 import { Formik, Field, ErrorMessage } from 'formik';
-import { selectContacts } from '../../redux/selectors';
-import { addContact } from '../../redux/operations';
+import { selectContacts } from '../../redux/contacts/selectors';
+import { addContact } from '../../redux/contacts/operations';
 
 const NameInputSchema = Yup.object().shape({
   name: Yup.string().min(2, 'Too short!').required('Name is required'),

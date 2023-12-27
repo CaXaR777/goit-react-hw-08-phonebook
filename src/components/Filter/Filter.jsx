@@ -2,8 +2,8 @@
 import * as s from './Filter.styled';
 // import PropTypes from 'prop-types';
 import { useSelector, useDispatch } from 'react-redux';
-import { setFilter } from '../../redux/filter';
-import { selectFilter } from '../../redux/selectors';
+import { setFilter } from '../../redux/contacts/filter';
+import { selectFilter } from '../../redux/contacts/selectors';
 
 export const Filter = () => {
   const dispatch = useDispatch();
@@ -11,7 +11,7 @@ export const Filter = () => {
 
   return (
     <s.Label>
-      Filter
+      Filter your contacts
       <input
         type="text"
         value={filter}

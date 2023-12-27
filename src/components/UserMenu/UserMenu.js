@@ -1,0 +1,22 @@
+import * as S from './UserMenu.styled';
+
+import { useDispatch } from "react-redux";
+import { logOut } from "redux/auth/operations";
+
+import { useAuth } from "hooks";
+
+
+
+export const UserMenu = () => {
+  const dispatch = useDispatch();
+  const { user } = useAuth();
+
+  return (
+    <S.UserDiv>
+      <S.Text>Welcome, {user.name}</S.Text>
+      <S.UserBtn type="button" onClick={() => dispatch(logOut())}>
+        Logout
+      </S.UserBtn>
+    </S.UserDiv>
+  );
+};
