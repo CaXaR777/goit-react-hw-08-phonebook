@@ -14,17 +14,14 @@ const ContactsPage = () => {
     dispatch(fetchContacts());
   }, [dispatch]);
 
-
-
-
   return (
     <div>
       <Helmet>
         <title>Contacts</title>
       </Helmet>
-      <h1>Phonebook</h1>
+      <h1>Deathnote</h1>
       <ContactForm />
-      <h2>Contacts</h2>
+      <h2>Targets</h2>
       <Filter />
       <ContactList />
     </div>

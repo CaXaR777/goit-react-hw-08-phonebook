@@ -6,9 +6,10 @@ export const Form = styled.form`
   width: 400px;
   padding: 10px;
   outline: 1px solid grey;
-  border-radius: 20px;
-  background-color: #d3d3d3;
+  border-radius: 10px;
+  background-color: black;
   margin: 0 auto;
+  color: aqua;
 `;
 
 export const Label = styled.label`
@@ -22,6 +23,7 @@ export const Input = styled.input`
   padding: 4px 12px;
   border-radius: 20px;
   font: inherit;
+  margin-top: 7px;
 `;
 
 export const Button = styled.button`
@@ -31,7 +33,7 @@ export const Button = styled.button`
   border-radius: 5px;
   border: none;
   box-shadow: 0 1px 7px grey;
-  background-color: orange;
+  background-color: aqua;
   margin-right: 4px;
   box-shadow: 0 1px 7px grey;
 

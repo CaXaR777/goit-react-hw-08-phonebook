@@ -1,5 +1,6 @@
 // import React from 'react';
 import * as s from './Filter.styled';
+import { FaSkull } from 'react-icons/fa';
 // import PropTypes from 'prop-types';
 import { useSelector, useDispatch } from 'react-redux';
 import { setFilter } from '../../redux/contacts/filter';
@@ -11,7 +12,10 @@ export const Filter = () => {
 
   return (
     <s.Label>
-      Filter your contacts
+      <s.Container>
+        <s.Text>Find your target</s.Text>
+        <FaSkull fill="yellow" />
+      </s.Container>
       <input
         type="text"
         value={filter}

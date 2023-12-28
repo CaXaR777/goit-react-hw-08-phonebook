@@ -1,6 +1,5 @@
 import * as S from './AuthNav.styled';
 
-
 export const AuthNav = () => {
   return (
     <div>

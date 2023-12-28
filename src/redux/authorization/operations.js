@@ -7,12 +7,11 @@ axios.defaults.baseURL = 'https://connections-api.herokuapp.com';
 //     console.log('Starting Request', request)
 //     return request
 //   })
-  
+
 //   axios.interceptors.response.use(response => {
 //     console.log('Response:', response)
 //     return response
 //   })
-  
 
 const setAuthHeader = token => {
   axios.defaults.headers.common.Authorization = `Bearer ${token}`;
@@ -39,24 +38,30 @@ export const register = createAsyncThunk(
   }
 );
 
-export const logIn = createAsyncThunk('authorization/logIn', async (creds, thunkAPI) => {
-  try {
-    const response = await axios.post('/users/login', creds);
-    setAuthHeader(response.data.token);
-    return response.data;
-  } catch (error) {
-    return thunkAPI.rejectWithValue(error.message);
+export const logIn = createAsyncThunk(
+  'authorization/logIn',
+  async (creds, thunkAPI) => {
+    try {
+      const response = await axios.post('/users/login', creds);
+      setAuthHeader(response.data.token);
+      return response.data;
+    } catch (error) {
+      return thunkAPI.rejectWithValue(error.message);
+    }
   }
-});
+);
 
-export const logOut = createAsyncThunk('authorization/logOut', async (_, thunkAPI) => {
-  try {
-    await axios.post('/users/logout');
-    clearAuthHeader();
-  } catch (error) {
-    return thunkAPI.rejectWithValue(error.message);
+export const logOut = createAsyncThunk(
+  'authorization/logOut',
+  async (_, thunkAPI) => {
+    try {
+      await axios.post('/users/logout');
+      clearAuthHeader();
+    } catch (error) {
+      return thunkAPI.rejectWithValue(error.message);
+    }
   }
-});
+);
 
 export const refreshUser = createAsyncThunk(
   'authorization/refreshUser',

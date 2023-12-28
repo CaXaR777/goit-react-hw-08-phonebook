@@ -1,9 +1,9 @@
-import { FaBookDead } from "react-icons/fa";
+import { FaBookDead } from 'react-icons/fa';
 import { Helmet } from 'react-helmet';
 
 const styles = {
   container: {
-        display: 'flex',
+    display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
     marginBottom: '30px',
@@ -12,7 +12,7 @@ const styles = {
     fontWeight: 500,
     fontSize: 48,
     textAlign: 'center',
-    color: 'pink',
+    color: 'greenyellow',
     marginRight: '20px',
   },
 };

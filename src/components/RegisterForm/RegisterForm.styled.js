@@ -6,8 +6,8 @@ export const Form = styled.form`
   width: 400px;
   padding: 10px;
   outline: 1px solid grey;
-  border-radius: 20px;
-  background-color: #d3d3d3;
+  border-radius: 10px;
+  background-color: black;
   margin: 0 auto;
 `;
 
@@ -16,6 +16,7 @@ export const Label = styled.label`
   flex-direction: column;
   margin-bottom: 16px;
   font-size: 16px;
+  color: aqua;
 `;
 
 export const Input = styled.input`
@@ -23,16 +24,17 @@ export const Input = styled.input`
   border-radius: 20px;
   font: inherit;
   cursor: pointer;
+  margin-top: 7px;
 `;
 
 export const Button = styled.button`
- width: 100px;
+  width: 100px;
   padding: 5px;
   cursor: pointer;
   border-radius: 5px;
   border: none;
   box-shadow: 0 1px 7px grey;
-  background-color: orange;
+  background-color: aqua;
   margin-right: 4px;
   box-shadow: 0 1px 7px grey;
 

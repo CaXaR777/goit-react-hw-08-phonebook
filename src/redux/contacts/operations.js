@@ -13,7 +13,6 @@ axios.defaults.baseURL = 'https://connections-api.herokuapp.com';
 //   return response
 // })
 
-
 export const fetchContacts = createAsyncThunk(
   'contacts/fetchAll',
   async (_, thunkAPI) => {

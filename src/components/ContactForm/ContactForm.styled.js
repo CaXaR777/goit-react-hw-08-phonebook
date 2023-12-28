@@ -8,11 +8,13 @@ export const StyledForm = styled(Form)`
   outline: 1px solid grey;
   border-radius: 20px;
   padding: 10px;
-  background-color: yellow;
+  background-color: black;
   label {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
+    font-size: larger;
+    color: #e22b2b;
   }
   input {
     margin-top: 6px;
@@ -21,12 +23,14 @@ export const StyledForm = styled(Form)`
   button {
     width: 100px;
     cursor: pointer;
-    background-color: greenyellow;
+    background-color: aqua;
+    background-color: black;
+    color: aqua;
+    color: red;
     border-radius: 5px;
-    border: none;
+    border: 1px solid aqua;
     &:hover {
-      background-color: blueviolet;
-      color: #fff;
+      background-color: aqua;
       transform: scale(1.1);
     }
   }

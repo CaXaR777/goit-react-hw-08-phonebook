@@ -1,11 +1,9 @@
 import * as S from './UserMenu.styled';
 
-import { useDispatch } from "react-redux";
-import { logOut } from "../../redux/authorization/operations";
+import { useDispatch } from 'react-redux';
+import { logOut } from '../../redux/authorization/operations';
 
-import { useAuth } from "hooks";
-
-
+import { useAuth } from 'hooks';
 
 export const UserMenu = () => {
   const dispatch = useDispatch();
@@ -13,7 +11,7 @@ export const UserMenu = () => {
 
   return (
     <S.UserDiv>
-      <S.Text>Welcome, {user.name}</S.Text>
+      <S.Text>Time for changes, {user.name}</S.Text>
       <S.UserBtn type="button" onClick={() => dispatch(logOut())}>
         Logout
       </S.UserBtn>

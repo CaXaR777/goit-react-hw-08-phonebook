@@ -4,37 +4,37 @@ import { useDispatch } from 'react-redux';
 
 import { useSelector } from 'react-redux';
 
-import { selectIsLoading, selectVisibleContacts } from '../../redux/contacts/selectors';
+import {
+  selectIsLoading,
+  selectVisibleContacts,
+} from '../../redux/contacts/selectors';
 import { deleteContact } from '../../redux/contacts/operations';
 
-
-
 export const ContactList = () => {
-
-const dispatch = useDispatch();
+  const dispatch = useDispatch();
   const isLoading = useSelector(selectIsLoading);
   const filteredContacts = useSelector(selectVisibleContacts);
 
   return (
     <div>
-    {isLoading ? (
-      <p>Loading...</p>
-    ) : (
-    <s.List>
-      {filteredContacts.map(({id, name, number}) => (
-        <s.ListItems key={id}>
-          <s.Name>{name}:</s.Name>
-          <s.Number>{number}</s.Number>
-          <s.Button
-            type="button"
-            onClick={() => dispatch(deleteContact(id))}
-          >
-            Delete
-          </s.Button>
-        </s.ListItems>
-      ))}
-    </s.List>
-    )}
+      {isLoading ? (
+        <p>Loading...</p>
+      ) : (
+        <s.List>
+          {filteredContacts.map(({ id, name, number }) => (
+            <s.ListItems key={id}>
+              <s.Name>{name}:</s.Name>
+              <s.Number>{number}</s.Number>
+              <s.Button
+                type="button"
+                onClick={() => dispatch(deleteContact(id))}
+              >
+                Dead
+              </s.Button>
+            </s.ListItems>
+          ))}
+        </s.List>
+      )}
     </div>
   );
 };

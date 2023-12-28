@@ -5,6 +5,7 @@ export const Label = styled.label`
   margin-bottom: 20px;
   display: flex;
   flex-direction: column;
+  color: blueviolet;
   input {
     width: 200px;
     padding: 2px;
@@ -17,4 +18,12 @@ export const Label = styled.label`
       outline-style: solid;
     }
   }
+`;
+export const Text = styled.p`
+  margin-right: 10px;
+`;
+
+export const Container = styled.div`
+  display: flex;
+  align-items: center;
 `;
