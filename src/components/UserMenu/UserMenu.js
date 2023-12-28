@@ -1,7 +1,7 @@
 import * as S from './UserMenu.styled';
 
 import { useDispatch } from "react-redux";
-import { logOut } from "redux/auth/operations";
+import { logOut } from "../../redux/authorization/operations";
 
 import { useAuth } from "hooks";
 

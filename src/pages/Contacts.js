@@ -1,6 +1,6 @@
 import { useDispatch } from 'react-redux';
 import { useEffect } from 'react';
-import { fetchContacts } from 'redux/contacts/operations';
+import { fetchContacts } from '../redux/contacts/operations';
 
 import { Helmet } from 'react-helmet';
 import { ContactForm } from 'components/ContactForm/ContactForm';

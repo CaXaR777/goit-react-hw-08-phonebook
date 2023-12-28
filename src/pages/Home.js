@@ -1,4 +1,4 @@
-import { RiContactsBookLine } from 'react-icons/ri';
+import { FaBookDead } from "react-icons/fa";
 import { Helmet } from 'react-helmet';
 
 const styles = {
@@ -12,6 +12,8 @@ const styles = {
     fontWeight: 500,
     fontSize: 48,
     textAlign: 'center',
+    color: 'pink',
+    marginRight: '20px',
   },
 };
 
@@ -21,8 +23,8 @@ const HomePage = () => {
       <Helmet>
         <title>Home page</title>
       </Helmet>
-      <h1 style={styles.title}>Create your contact book </h1>
-      <RiContactsBookLine fill="#ff923cba" fontSize="80" />
+      <h1 style={styles.title}>Create your Deathnote</h1>
+      <FaBookDead fill="yellow" fontSize="80" />
     </div>
   );
 };
